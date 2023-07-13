@@ -26,13 +26,13 @@ Download and preprocess the data
 ```bash
 # download SQuAD and Glove
 $ sh download.sh
-If cannot download the files, you may need to download them in online
+# If cannot download the files, you may need to download them in online
 ```
 
 
 Train the QAnet model with SQuAD dataset
 ```bash
-please clear the data files(not include folders) in the ./data path first
+# please clear the data files(not include folders) in the ./data path first
 # preprocess SQuAD dataset
 $ python main.py --mode data --model qanet
 # model/model.pt will be generated every epoch
@@ -45,7 +45,7 @@ $ python main.py --mode test --model qanet
 
 Train the QAnet model with FinQa dataset
 ```bash
-please clear the data files(not include folders) in the ./data path first
+# please clear the data files(not include folders) in the ./data path first
 # preprocess FinQA dataset
 $ python main.py --mode data --model finqa
 # model/model.pt will be generated every epoch
